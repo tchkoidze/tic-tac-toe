@@ -184,7 +184,7 @@ function checkwiner(arrays) {
       winLoseHeader.style.display = "block";
       winLoseHeader.textContent = "PLAYER 1 WINS!";
       takeRound.textContent = "O TAKES THE ROUND";
-      //quit.textContent = "QUIT";
+
       quit.style.width = "76px";
       nextRound.textContent = "NEXT ROUND";
       takeRound.style.color = "#F2B137";
