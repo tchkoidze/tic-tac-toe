@@ -26,8 +26,9 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   color: var(--darknavy);
-  padding: 0 24px;
+  /*padding: 0 24px;*/
   background-color: var(--darknavy);
+  position: relative;
 }
 
 .newgame-maue-cotainer {
@@ -343,6 +344,104 @@ body {
   background-position: 50%;
   background-size: 40px;
 }
+
+/* x-takes-round-container */
+.x-takes-round-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+
+  display: none;
+}
+
+.x-takes-round-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 228px;
+  background-color: var(--darknavysemi);
+  padding: 40px 0 48px;
+}
+
+.win-lose-header {
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.875px;
+
+  color: var(--Silver);
+}
+
+.take-round {
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  color: var(--lightblue);
+  margin: 16px 0 24px;
+}
+
+.quit-btn,
+.cancel-btn {
+  width: 76px;
+  height: 52px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #1a2a33;
+  border: none;
+  background: #a8bfc9;
+  box-shadow: inset 0px -4px 0px #6b8997;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.cancel-btn {
+  width: 139px;
+}
+.next-round-btn,
+.yes-restart-btn {
+  width: 146px;
+  height: 52px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #1a2a33;
+  border: none;
+  background: #f2b137;
+  box-shadow: inset 0px -4px 0px #cc8b13;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.yes-restart-btn {
+  height: 52px;
+}
+.restart-game-btns {
+  display: none;
+}
+
+/*.yes-restart {
+  background: #f2b137;
+  box-shadow: inset 0px -4px 0px #cc8b13;
+}*/
 
 /* 768px */
 @media (min-width: 768px) {

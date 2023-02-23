@@ -119,18 +119,19 @@
           </div>
           <p class="turn">TURN</p>
         </div>
-        <button class="restart-btn"></button>
+        <button class="restart-btn" type="button"></button>
       </header>
       <div class="board">
-        <div class="cell cell1" data-value="1">1</div>
-        <div class="cell cell2" data-value="2">2</div>
-        <div class="cell cell3" data-value="3">3</div>
-        <div class="cell cell4" data-value="4">4</div>
-        <div class="cell cell5" data-value="5">5</div>
-        <div class="cell cell6" data-value="6">6</div>
-        <div class="cell cell7" data-value="7">7</div>
-        <div class="cell cell8" data-value="8">8</div>
-        <div class="cell cell9" data-value="9">9</div>
+        <div class="cell" data-value="0">0</div>
+        <div class="cell" data-value="1">1</div>
+        <div class="cell" data-value="2">2</div>
+        <div class="cell" data-value="3">3</div>
+        <div class="cell" data-value="4">4</div>
+        <div class="cell" data-value="5">5</div>
+        <div class="cell" data-value="6">6</div>
+        <div class="cell" data-value="7">7</div>
+        <div class="cell" data-value="8">8</div>
+
         <div class="score-box your-score-box">
           <h3 class="your-score-header">X (YOU)</h3>
           <p class="your-score">0</p>
@@ -155,6 +156,20 @@
         <div class="score-box-2players p1-score-box">
           <h3 class="cpu-score-header">O (P1)</h3>
           <p class="p1-score">0</p>
+        </div>
+      </div>
+    </section>
+    <section class="x-takes-round-container">
+      <div class="x-takes-round-box">
+        <h3 class="win-lose-header">PLAYER 2 WINS!</h3>
+        <h1 class="take-round">X TAKES THE ROUND</h1>
+        <div class="takes-round-buttons">
+          <button class="quit-btn" type="button">quit</button>
+          <button class="next-round-btn" type="button">next round</button>
+        </div>
+        <div class="restart-game-btns">
+          <button class="cancel-btn" type="button">NO, CANCEL</button>
+          <button class="yes-restart-btn" type="button">YES, RESTART</button>
         </div>
       </div>
     </section>
