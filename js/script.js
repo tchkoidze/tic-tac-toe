@@ -61,6 +61,10 @@ restart.addEventListener("click", (event) => {
     starterPage.style.display = "flex";
     vsCpuSection.style.display = "none";
     takesRound.style.display = "none";
+    for (let cell = 0; cell < cells.length; cell++) {
+      cells[cell].classList.remove("cell-x");
+      cells[cell].classList.remove("cell-o");
+    }
     roundCounter = 0;
     score1 = 0;
     score2 = 0;
